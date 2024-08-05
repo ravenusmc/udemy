@@ -43,3 +43,11 @@ CREATE TABLE cats3
 );
 
 INSERT INTO cats3 (age) VALUES (2);
+
+--Primary Keys:
+CREATE TABLE cats4 
+(
+    cat_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    name VARCHAR(100) DEFAULT 'mystery',
+    age INT DEFAULT 5
+);
