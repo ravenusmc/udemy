@@ -36,3 +36,16 @@ WHERE breed = 'Tabby';
 
 UPDATE employees SET current_status = 'laid-off', last_name = 'who cares';
 
+--Exercise 
+UPDATE cats SET name = 'Jack'
+WHERE name = 'Jackson';
+
+UPDATE cats set age = 12 
+WHERE breed = 'Maine Coon';
+
+--Delete 
+DELETE FROM cats WHERE name = 'Egg';
+
+DELETE FROM cats WHERE age = 4; 
+DELETE FROM cats WHERE cat_id = age; 
+DELETE FROM cats; 
