@@ -8,7 +8,7 @@ CREATE table shirts (
     shirt_id INT AUTO_INCREMENT,
     article VARCHAR(100),
     color VARCHAR(100),
-    shirt_size VARCHAR(1),
+    shirt_size VARCHAR(2),
     last_worn int,
     PRIMARY KEY (shirt_id)
 );
@@ -41,4 +41,5 @@ UPDATE shirts set shirt_size = 'S', color = 'off white'
 WHERE color = 'white'; 
 
 DELETE FROM shirts WHERE last_worn = 200; 
-3:52
+DELETE FROM shirts where article = 'tank top';
+DELETE FROM shirts; 
