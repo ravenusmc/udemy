@@ -23,3 +23,4 @@ SELECT
 
 --Replace
 SELECT REPLACE('cheese brear coffee milk', ' ', ' and ');
+SELECT REPLACE(title, ' ', '-') FROM books; 
