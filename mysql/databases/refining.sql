@@ -16,3 +16,8 @@ SELECT DISTINCT author_fname, author_lname from books;
 SELECT DISTINCT CONCAT(author_fname, ' ', author_lname) 
 AS 'Distinct Author Names' 
 FROM books; 
+
+-------------- ORDER BY 
+SELECT DISTINCT author_fname, author_lname 
+FROM books
+ORDER BY author_lname;
