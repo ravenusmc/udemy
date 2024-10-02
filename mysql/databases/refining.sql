@@ -21,3 +21,6 @@ FROM books;
 SELECT DISTINCT author_fname, author_lname 
 FROM books
 ORDER BY author_lname;
+
+-------------- LIMIT
+SELECT title, released_year FROM books LIMIT 5;
