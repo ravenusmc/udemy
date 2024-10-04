@@ -25,4 +25,14 @@ ORDER BY author_lname;
 -------------- LIMIT
 SELECT title, released_year FROM books LIMIT 5;
 
--------------- Next Lesson 
+-------------- Like 
+SELECT author_fname, author_lname FROM books
+WHERE author_fname LIKE '%da%'; 
+
+SELECT * FROM books
+WHERE title LIKE '%:%';
+
+_ = exactly one character 
+
+SELECT * FROM books
+WHERE author_fname LIKE '_____';
