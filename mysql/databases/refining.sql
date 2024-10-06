@@ -36,3 +36,7 @@ _ = exactly one character
 
 SELECT * FROM books
 WHERE author_fname LIKE '_____';
+
+------ Escaping wildcard 
+WHERE title like '%\%%'
+
