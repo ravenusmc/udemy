@@ -32,3 +32,9 @@ WHERE pages = (SELECT MIN(pages) FROM books);
 
 SELECT title, released_year FROM books
 WHERE released_year = (SELECT min(released_year) FROM books);
+
+----- Grouping by multiple columns 
+SELECT concat(author_fname, ' ', author_lname) AS author, count(*) 
+FROM books
+GROUP BY author_fname, author_lname;
+
