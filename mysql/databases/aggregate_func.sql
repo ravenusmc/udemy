@@ -38,3 +38,8 @@ SELECT concat(author_fname, ' ', author_lname) AS author, count(*)
 FROM books
 GROUP BY author_fname, author_lname;
 
+------ Min and Max
+SELECT author_fname, author_lname, 
+MIN(released_year)
+FROM books 
+GROUP BY author_lname, author_fname; 
