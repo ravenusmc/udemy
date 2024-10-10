@@ -44,4 +44,10 @@ MIN(released_year)
 FROM books 
 GROUP BY author_lname, author_fname; 
 
--------- Next Class
+-------- SUM 
+SELECT SUM(pages) FROM books; 
+
+SELECT author_lname, SUM(pages) 
+FROM books 
+GROUP BY author_lname; 
+
