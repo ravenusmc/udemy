@@ -51,3 +51,5 @@ SELECT author_lname, SUM(pages)
 FROM books 
 GROUP BY author_lname; 
 
+-------- NEXT LESSON
+
